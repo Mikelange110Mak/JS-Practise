@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Practise JS1</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="tabs">
+         <div class="tabs__body">
+            <div class="tabs__buttons">
+               <span class="tabs__buttons-item">Содержимое таба 1</span>
+               <span class="tabs__buttons-item">Содержимое таба 2</span>
+               <span class="tabs__buttons-item">Содержимое таба 3</span>
+               <span class="tabs__buttons-item">Содержимое таба 4</span>
+            </div>
+            <div class="tabs__content">
+               <div class="tabs__block _first">Первый таб</div>
+               <div class="tabs__block _second">Второй таб</div>
+               <div class="tabs__block _third">Третий таб</div>
+               <div class="tabs__block _fourth">Четвертый таб</div>
+            </div>
+         </div>
+      </div>
+      <div class="timer">
+         <div class="timer__body days">
+            <div class="timer__block">
+               <span id="days">11</span>
+               дней
+            </div>
+            <div class="timer__block hours">
+               <span id="hours">7</span>
+               часов
+            </div>
+            <div class="timer__block minutes">
+               <span id="minutes">37</span>
+               минут
+            </div>
+            <div class="timer__block seconds">
+               <span id="seconds">20</span>
+               секунд
+            </div>
+         </div>
+      </div>
+      <div class="trigger">
+         <button class="trigger__button">Trigger</button>
+      </div>
+      <div class="modal hide">
+         <div class="modal__body">
+            <button class="modal__close">X</button>
+            <div class="modal__top">Модальное окно</div>
+            <form action="#">
+               <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+               <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+               <button class="input__button">Перезвонить мне</button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <div contenteditable class="box__item"></div>
+      </div>
+      <div class="this-btn">
+         <button class="this-btn__item">This is a button</button>
+      </div>
+      <div class="cards">
+         <div class="cards__body">
+
+         </div>
+      </div>
+
+   </div>
+   <script src="script.js"></script>
+</body>
+
+</html>

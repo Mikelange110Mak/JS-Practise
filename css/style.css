@@ -1,0 +1,244 @@
+.tabs {
+  background-color: #202025;
+  padding: 30px 0;
+  border-radius: 8px;
+  color: aliceblue;
+}
+
+.tabs__body {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tabs__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 17px;
+}
+
+.tabs__buttons-item {
+  cursor: pointer;
+  font-size: 18px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.tabs__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs__block {
+  min-height: 100%;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 23px;
+}
+
+._first {
+  background-color: #0e0101;
+  color: #464040;
+}
+
+._second {
+  background-color: #aaffbd;
+  color: #0f0f0f;
+}
+
+._third {
+  background-color: #dce290;
+  color: #252121;
+}
+
+._fourth {
+  background-color: #b3d3f8;
+  color: #131413;
+}
+
+.__hide {
+  display: none;
+}
+
+.__active {
+  border: 1px solid #8a8888;
+}
+
+.timer {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.timer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timer span {
+  display: block;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.timer__block {
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.status {
+  text-align: center;
+}
+
+.trigger__button {
+  font-size: 20px;
+  padding: 4px 20px;
+}
+
+.modal {
+  font-size: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__body {
+  margin: 25% auto;
+  padding: 25px 5px;
+  max-width: 400px;
+  border: 1px solid #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  background-color: #eef5f8;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  opacity: 0.95;
+}
+
+.modal__top {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  text-align: center;
+}
+
+.modal__middle {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  text-align: center;
+}
+
+.modal__bottom {
+  font-size: 16px;
+}
+
+.box__item {
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+  border: 1px solid #333;
+}
+
+.this-btn {
+  margin: 50px 0 0 0;
+}
+
+.this-btn__item {
+  padding: 11px 7px;
+}
+
+.cards {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cards__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #333;
+  padding: 5px 8px;
+  background-color: #e8f0fc;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card__pic img {
+  width: 160px;
+  height: 170px;
+}
+
+.card__descr {
+  line-height: 1.3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
