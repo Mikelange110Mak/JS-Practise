@@ -146,6 +146,7 @@
       flex-wrap: wrap;
       flex-direction: row-reverse;
       opacity: 0.95;
+
    }
 
    // .modal__top
@@ -237,4 +238,20 @@
    // .card__price
 
    &__price {}
+}
+
+form {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+
+   input {
+      padding: 9px 11px;
+   }
+}
+
+.modal__status {
+   text-align: center;
+   flex: 0 1 100%;
 }

@@ -242,3 +242,26 @@
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+form input {
+  padding: 9px 11px;
+}
+
+.modal__status {
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+}
