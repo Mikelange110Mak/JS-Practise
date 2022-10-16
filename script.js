@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
    showTabContent();
 
    //Timer
-   const deadline = '2022-10-11',
+   const deadline = '2023-01-01',
       dayStr = document.querySelector('.days'),
       hoursStr = document.querySelector('.hours'),
       minutesStr = document.querySelector('.minutes'),
@@ -277,9 +277,10 @@ window.addEventListener('DOMContentLoaded', () => {
          </div>
 `;
       })
-
    }
 
-
+   fetch('http://localhost:3000/menu')
+      .then(data => data.json())
+      .then(res => console.log(res))
 
 })
