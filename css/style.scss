@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
 .tabs {
    background-color: rgb(32, 32, 37);
    padding: 30px 0;
@@ -169,26 +171,61 @@
    }
 }
 
-.box {
+.grab {
+   margin: 30px 0;
+   font-family: 'Mulish', sans-serif;
+   // .grab__row
 
-   // .box__item
+   &__row {
+      background-color: rgb(216, 238, 230);
+      display: flex;
+      justify-content: center;
+      gap: 45px;
+      padding: 8px 0;
+   }
+
+
+
+   // .grab__title
+
+   &__title {
+      flex: 0 1 180px;
+      height: 30px;
+      text-align: center;
+      font-size: 20px;
+
+      border-radius: 8px;
+      background: linear-gradient(to right, #ffefba, #ffffff);
+   }
+
+   // .grab__place
+
+   &__place {
+      flex: 0 1 180px;
+      min-height: 60px;
+
+
+   }
 
    &__item {
-      width: 200px;
-      height: 200px;
-      margin: 40px auto;
-      border: 1px solid #333;
+      text-align: center;
+      padding: 8px 0;
+      font-size: 20px;
+      color: #f0f2f0;
+      cursor: grab;
+      min-width: 175px;
+      height: 30px;
+      border-radius: 10px;
+      background: linear-gradient(to right, #2980b9, #2c3e50);
    }
+
+   .placeholder {
+      min-height: 80px;
+   }
+
 }
 
-.this-btn {
-   margin: 50px 0 0 0;
-   // .this-btn__item
 
-   &__item {
-      padding: 11px 7px;
-   }
-}
 
 .cards {
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -254,4 +291,14 @@ form {
 .modal__status {
    text-align: center;
    flex: 0 1 100%;
+}
+
+
+
+.hold {
+   //box-shadow: -7px -16px 16px -3px rgba(30, 32, 32, 0.2) inset;
+}
+
+.hovered {
+   border-top: 2px solid rgba(147, 206, 222, 1);
 }
