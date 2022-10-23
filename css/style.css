@@ -287,6 +287,39 @@
           flex: 1 1 auto;
 }
 
+.slider {
+  margin: 30px 0;
+}
+
+.slider__counter {
+  font-size: 20px;
+  text-align: center;
+}
+
+.slider__counter-prev {
+  cursor: pointer;
+}
+
+.slider__counter-next {
+  cursor: pointer;
+}
+
+.slider__offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 500px;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;

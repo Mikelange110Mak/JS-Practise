@@ -277,6 +277,48 @@
    &__price {}
 }
 
+
+.slider {
+
+
+
+   &__counter {
+      font-size: 20px;
+      text-align: center;
+   }
+
+   // .slider__counter-prev
+
+   &__counter-prev {
+      cursor: pointer;
+   }
+
+   // .slider__counter-next
+
+   &__counter-next {
+      cursor: pointer;
+   }
+
+
+   margin: 30px 0;
+   // .slider__offer
+
+   &__offer {
+      display: flex;
+   }
+}
+
+.slide {
+   display: flex;
+   justify-content: center;
+   max-height: 500px;
+
+
+   img {}
+}
+
+
+
 form {
    display: flex;
    flex-wrap: wrap;
