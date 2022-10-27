@@ -14,6 +14,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 15px;
+  font-family: 'Mulish', sans-serif;
 }
 
 .tabs__buttons {
@@ -288,16 +289,43 @@
 }
 
 .slider {
-  margin: 30px 0;
+  width: 650px;
+  margin: 30px auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .slider__counter {
-  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  gap: 40px;
 }
 
 .slider__counter-prev {
   cursor: pointer;
+}
+
+.slider__counter-count {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .slider__counter-next {
@@ -310,6 +338,23 @@
   display: flex;
 }
 
+.slider__wrapper {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.slider__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
 .slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,6 +363,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   max-height: 500px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 form {
@@ -343,6 +395,48 @@ form input {
           flex: 0 1 100%;
 }
 
+.fa-solid {
+  font-size: 30px;
+}
+
 .hovered {
   border-top: 2px solid #93cede;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.dot {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 30px;
+  height: 6px;
+  margin-right: 3px;
+  margin-left: 3px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  -webkit-transition: opacity .6s ease;
+  -o-transition: opacity .6s ease;
+  transition: opacity .6s ease;
 }
